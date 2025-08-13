@@ -1,0 +1,162 @@
+body {
+  background-color: grey;
+  font-family: "Times New Roman", Times, serif;
+  margin: 55px 75px 25px 75px;
+}
+
+h1 {
+    color: blue;
+    text-align:center;
+}
+
+ p {
+    font-size: 20px;
+	
+}
+span.boldtext {
+    font-weight: bold;
+	
+}
+span.italictext {
+	font-style: italic;
+}
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+}
+
+
+* {
+	box-sizing: border-box;
+}
+/* Three image containers (use 25% for four, and 50% for two, etc) */
+.column {
+float: left;
+width: 50%;
+padding: 15px;
+}
+
+/* Clear floats after image containers */}
+.row::after {
+content: "";
+clear: both;
+display: table;
+}
+
+/* Responsive layout makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 500px) {
+  .column {
+  width: 100%;
+ }
+}
+
+ ul.menu {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+ul.menu {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: brown;
+}
+
+li.menu {
+  float: left;
+}
+
+li.menu a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 34px 36px;
+  text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li.menu a:hover {
+  background-color: white;
+}
+
+.active {
+  background-color: white;
+}
+
+/* Add a gray right border to all list items, except the
+last item (last-child) */
+li.menu {
+border-right: 2px solid red;
+}
+
+ li.menu:last-child {
+border-right: none;
+}
+
+table {
+width: 100%;
+}
+
+table, th, td {
+border: 4px solid brown;
+border-collapse: collapse;
+}
+
+th {
+text-align: center;
+vertical-align: middle;
+}
+
+td {
+text-align: left;
+vertical-align: middle;
+}
+
+th, td {
+padding: 25px;
+}
+
+tr:nth-child(even) {
+background-color: yellow;
+}
+/* Footer Styling */
+footer {
+    background-color: black; /* black background */
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 1.2em;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* subtle shadow for depth */
+}
+
+footer p {
+    margin: 0;
+}
+
+footer strong {
+    font-weight: bold;
+    color: #ffcc00; /* Gold color for emphasis */
+}
+
+.footer-links {
+    margin-top: 10px;
+}
+
+.footer-links a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: bold;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+    color: #ffcc00; /* Gold color on hover */
+}
